@@ -10,6 +10,7 @@ bl_info = {
     "location": "File > Export",
     "description": "Exports each selected object into its own file, at the origin of the world (depend of objects origins)",
     "doc_url":     "https://docs.google.com/document/d/1j2DZWXR-klQArrlfSLQAV_ltop4BOsD6ZXgRYFnC0b0/edit?usp=sharing",
+    "tracker_url": "https://github.com/Tarmunds/Unreal-exporter",
     "category": "Import-Export",
 }
 
@@ -94,7 +95,6 @@ def register():
     bpy.utils.register_class(ExportSelectedObjectsOperator)
     bpy.types.TOPBAR_MT_file_export.append(menu_func_export) #base export end
     bpy.utils.register_class(MeshRenamePanel)
-    bpy.utils.register_class(MeshRenameOperator)
     bpy.types.Scene.mesh_rename_path = bpy.props.StringProperty(name="path", default="")
 
 
@@ -103,9 +103,7 @@ def unregister():
     bpy.utils.unregister_class(ExportSelectedObjectsOperator)
     bpy.types.TOPBAR_MT_file_export.remove(menu_func_export) #base export end
     bpy.utils.unregister_class(MeshRenamePanel)
-    bpy.utils.unregister_class(MeshRenameOperator)
     del bpy.types.Scene.mesh_rename_path
-    del bpy.types.Scene.mesh_rename_increment
 
 
 if __name__ == "__main__":

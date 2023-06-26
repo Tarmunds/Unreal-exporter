@@ -1,5 +1,9 @@
 Unreal Exporter
 
+Setup :
+
+Download exclusively the pithon file (.py), or extract it from the zip, then install it with the classic way : (edit; preference; addon; install; select the file; enable the addon)
+
 Fonctions : 
 
 This addon will export separately all your selected meshes at the world origin, based on their own origins. Typically if you want to import on unreal with a quick drag and drop, you will have the right origins for each objects, and they will keep it at each reimport (if you exported with the addon)
