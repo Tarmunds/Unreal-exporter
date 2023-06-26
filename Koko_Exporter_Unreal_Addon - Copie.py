@@ -4,11 +4,12 @@ from bpy.types import Operator
 
 bl_info = {
     "name": "Export Unreal",
-    "author": "Tarmund",
-    "version": (2, 7),
+    "author": "Tarmunds",
+    "version": (1, 3),
     "blender": (2, 80, 0),
     "location": "File > Export",
     "description": "Exports each selected object into its own file, at the origin of the world (depend of objects origins)",
+    "doc_url":     "https://docs.google.com/document/d/1j2DZWXR-klQArrlfSLQAV_ltop4BOsD6ZXgRYFnC0b0/edit?usp=sharing",
     "category": "Import-Export",
 }
 
